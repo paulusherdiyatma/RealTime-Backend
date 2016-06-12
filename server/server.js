@@ -27,7 +27,7 @@ boot(app, __dirname, function (err) {
     app.io = require('socket.io')(app.start());
     
     app.io.on('connection', function (socket) {
-      good(socket, app.io);
+      good(app.models.good,socket);
 
       socket.on('disconnect', function () {
         console.log('user disconnected');

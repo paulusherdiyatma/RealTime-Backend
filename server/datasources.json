@@ -2,5 +2,10 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongodb": {
+    "database": "realtime",
+    "name": "mongodb",
+    "connector": "mongodb"
   }
 }

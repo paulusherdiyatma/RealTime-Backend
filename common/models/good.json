@@ -13,6 +13,9 @@
     "price": {
       "type": "string",
       "required": true
+    },
+    "lastUpdated": {
+      "type": "date"
     }
   },
   "validations": [],
