@@ -20,7 +20,6 @@ module.exports = function (Good, socket) {
         socket.on('searchGood', function (data, fn) {
 
             var pattern = new RegExp('.*' + data[2] + '.*', "i"); /* case-insensitive RegExp search */
-
             //find goods by name
             Good.find({ where: { name: { like: pattern } }, limit:data[0], skip:data[1]}, function (error, result) {
                 Good.count({ name: { like: pattern }}, function(error, countResult){

@@ -35,5 +35,12 @@
   "good": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "member": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Email" : {
+    "dataSource" :"emailDs"
   }
 }
